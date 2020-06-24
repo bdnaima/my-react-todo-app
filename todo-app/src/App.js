@@ -22,8 +22,13 @@ class App extends Component {
   render() {
     return (
       <div className="container">
-        <h1>My todo app</h1>
-        <Todos todos={this.state.todos} deleteTodo={this.deleteTodo}/>
+       <header className="text-center text-light my-4">
+          <h1 className="mb-4">My todo app</h1>
+          <Todos todos={this.state.todos} deleteTodo={this.deleteTodo}/>
+          <form className="search">
+            <input className="form-control m-auto" type="text" name="search" placeholder="search todos"/>
+          </form>
+        </header>
       </div>
       
     );

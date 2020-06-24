@@ -5,8 +5,8 @@ const Todos = ({todos, deleteTodo}) => {
         todos.map(todo => {
             return (
                 <div key={todo.id}>
-                    <ul className="list-group">
-                        <li className="list-group-item" onClick={() => deleteTodo(todo.id)}>{todo.content}</li>
+                    <ul className="list-group todos mx-auto text-light">
+                        <li className="list-group-item d-flex justify-contnent-between align-items-center" onClick={() => deleteTodo(todo.id)}>{todo.content}</li>
                     </ul>
                 </div>
             )
