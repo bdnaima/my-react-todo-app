@@ -10,10 +10,20 @@ body {
 
 .container {
   max-width: 400px;
+  margin-top: 10em;
+}
+
+.flex-button {
+  display: flex;
 }
 
 .todos li {
   background: #423a6f;
+}
+
+button {
+  width: 10em;
+  margin-left: 1em;
 }
 
 code {
